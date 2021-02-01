@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    /* scroll-behavior: smooth; */
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.logo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 6vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 1.5s;
+}
+
+.logo:active {
+    letter-spacing: 40px;
+    transition: 1s;
+}
+
+.menu {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuBtn {
+    height: 70%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.menuDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    transform: translateY(-1200px);
+    transition: 1.8s;
+    z-index: 1;
+}
+
+.showMenu {
+    transform: translateY(0px);
+    transition: 1.8s;
+}
+
+.line {
+    width: 60%;
+    border: 0.1rem solid #fff;
+    border-radius: 10px;
+}
+
+.wideline {
+    width: 100%;
+    border-color: #f368e0;
+}
+
+.wideLogo {
+    letter-spacing: 40px;
+    transition: 1s;
+}
+
+main {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+.product-introduction {
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-header {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.introduction-header-title {
+    font-size: 6vw;
+    font-weight: 200;
+}
+
+.introduction-images {
+    height: 60%;
+    width: 100%;
+}
+
+.overflow {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #000000;
+}
+
+.icon {
+    height: 64px;
+    width: 64px;
+    margin: 20px;
+}
+
+.show-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noshow-img {
+    display: none;
+}
+
+#intro-image-1 {
+    background-image: url("images/product-1.jpg");
+}
+
+#intro-image-2 {
+    background-image: url("images/product-2.jpg");
+}
+
+#intro-image-3 {
+    background-image: url("images/product-1.jpg");
+}
+
+.introduction-footer {
+    height: 25%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.introduction-footer-title {
+    border-bottom: 1px solid #f368e0;
+    width: auto;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.introduction-footer-slogan {
+    font-size: 16px;
+    padding: 10px;
+    color: #00000050;
+}
+
+.shopBtn {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #f368e0; 
+    width: 100px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+}
+
+.quotes {
+    height: 300px;
+    width: 80%;
+    margin-top: 2rem;
+    background-image: url("images/model-1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backDiv {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noFlow {
+    overflow: hidden;
+}
+
+.backBtn {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 100px;
+    background-color: #f368e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #252525;
+    display: flex;
+}
+
+.contact-social, .contact-business {
+    height: 100%;
+    width: 50%;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    transition: 1s;
+}
