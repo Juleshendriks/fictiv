@@ -20,6 +20,10 @@ scrollBtn.addEventListener('click', () => {
 });
 
 menuBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
   logo.classList.toggle("wideLogo");
   menuBtn.classList.toggle("rotate");
   menuDiv.classList.toggle("showMenu");

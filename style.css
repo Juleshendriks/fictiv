@@ -56,6 +56,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .menuDiv {
@@ -66,6 +67,9 @@ header {
     transform: translateY(-1200px);
     transition: 1.8s;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .showMenu {
@@ -213,6 +217,7 @@ a {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 100%;
 }
 
 .backDiv {
@@ -262,4 +267,120 @@ footer {
 .rotate {
     transform: rotate(-90deg);
     transition: 1s;
+}
+
+.arrow {
+    height: 100%;
+    width: auto;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 262px;
+    width: 80%;
+    max-width: 300px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #252525;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-title {
+    height: 20%;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 2px solid #252525;
+    border-bottom: 2px solid #252525;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 60%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-header {
+    margin-top: 2rem;
+}
+
+.c1 {
+    background-image: url("images/product-7.jpg");
+}
+
+.c2 {
+    background-image: url("images/product-2.jpg");
+}
+
+.c3 {
+    background-image: url("images/product-6.jpg");
+}
+
+.c4 {
+    background-image: url("images/product-4.jpg");
+}
+
+.card-footer {
+    height: 20%;
+    width: 80%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .logo {
+        font-size: 2vw;
+    }
+
+    .product-introduction {
+        width: 50%;
+    }
+
+    .introduction-header-title {
+        font-size: 2vw;
+    }
+
+    .quotes {
+        height: 400px;
+        width: 20%;
+        background-position: top;
+    }
+
+    .products {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
 }
